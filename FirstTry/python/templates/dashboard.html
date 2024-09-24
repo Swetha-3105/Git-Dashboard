@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub PR Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+
+</head>
+<body>
+<div class="container">
+    <h1>GitHub Pull Requests Dashboard</h1>
+
+    <div class="repo-input">
+        <input type="text" id="repoOwner" placeholder="Repo Owner">
+        <input type="text" id="repoName" placeholder="Repo Name">
+        <button id="fetchPrsBtn">Fetch PRs</button>
+    </div>
+
+    <div id="pr-list">Pull requests will be listed here</div>
+    <div id="pr-details">PR details will be shown here</div>
+
+    <canvas id="prChart"></canvas>
+    <canvas id="pieChart" width="300" height="300"></canvas>
+    <canvas id="reviewCommentsChart" width="400" height="200"></canvas>
+
+
+</div>
+</body>
+</html>

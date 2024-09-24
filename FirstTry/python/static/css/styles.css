@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.repo-input {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.repo-input input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.repo-input button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#pr-list, #pr-details {
+    margin-top: 20px;
+}
+
+.pr-item {
+    padding: 10px;
+    background-color: #e9ecef;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.pr-item:hover {
+    background-color: #dee2e6;
+}
+
+#pieChart {
+    max-width: 300px; /* Set a maximum width */
+    max-height: 300px; /* Set a maximum height */
+    margin: auto; /* Center it if needed */
+    display: block; /* Ensure it behaves like a block element */
+}
